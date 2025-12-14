@@ -1,0 +1,2 @@
+{"query": "What is the inventory risk for store 1?", "tool": "inventory_agent", "payload": {"store_id": 1}, "result": {"store_id": 1, "predicted_weekly_sales": 1499849.15, "risk_level": "MEDIUM"}, "timestamp": "2025-12-14T08:36:11.631641"}
+{"query": "What is the inventory risk for store 1?", "tool": "inventory_agent", "payload": {"store_id": 1, "weeks": 3}, "result": {"store_id": 1, "predicted_weekly_sales": 1499849.15, "risk_level": "MEDIUM"}, "timestamp": "2025-12-14T08:41:10.905060"}
