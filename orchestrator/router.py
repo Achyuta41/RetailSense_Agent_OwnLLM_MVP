@@ -1,17 +1,41 @@
-def route_query(user_query: str) -> str:
-    """
-    Rule-based router (MVP).
-    Later replace with small LLM.
-    """
-    query = user_query.lower()
+OLLAMA_PATH= r"C:\Users\achyu\AppData\Local\Programs\Ollama\ollama.exe"
+import subprocess
+import json
 
-    if "stock" in query or "inventory" in query or "risk" in query:
-        return "inventory_agent"
 
-    if "sales" in query or "performance" in query:
-        return "sales_agent"
+ROUTER_PROMPT = """
+You are a STRICT router.
+Your job is to choose ONE tool.
 
-    if "offer" in query or "discount" in query:
-        return "offer_agent"
+Available tools:
+- inventory_agent
+- sales_agent
+- offer_agent
+- notification_agent
 
-    return "unknown"
+Rules:
+- Return ONLY JSON
+- Format: {"tool": "<tool_name>"}
+- No explanations
+- If unclear, return {"tool": "unknown"}
+
+User query:
+"""
+
+def route_intent(user_query: str) -> str:
+    prompt = ROUTER_PROMPT + user_query
+
+    result = subprocess.run(
+        [OLLAMA_PATH, "run", "phi"],
+        input=prompt,
+        text=True,
+        capture_output=True
+    )
+
+    output = result.stdout.strip()
+
+    try:
+        response = json.loads(output)
+        return response.get("tool", "unknown")
+    except Exception:
+        return "unknown"

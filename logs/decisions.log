@@ -1,2 +1,25 @@
 {"query": "What is the inventory risk for store 1?", "tool": "inventory_agent", "payload": {"store_id": 1}, "result": {"store_id": 1, "predicted_weekly_sales": 1499849.15, "risk_level": "MEDIUM"}, "timestamp": "2025-12-14T08:36:11.631641"}
 {"query": "What is the inventory risk for store 1?", "tool": "inventory_agent", "payload": {"store_id": 1, "weeks": 3}, "result": {"store_id": 1, "predicted_weekly_sales": 1499849.15, "risk_level": "MEDIUM"}, "timestamp": "2025-12-14T08:41:10.905060"}
+{"timestamp": "2025-12-14T10:19:09.781272", "query": "What is the inventory risk for store 1?", "tool": "unknown", "result": {"error": "Tool not supported in MVP"}}
+{"timestamp": "2025-12-14T10:21:01.085752", "query": "What is the inventory risk for store 1?", "tool": "unknown", "result": {"error": "Tool not supported in MVP"}}
+{"timestamp": "2025-12-14T10:28:48.785308", "query": "What is the inventory risk for store 1?", "tool": "sales_agent", "result": {"error": "Tool not supported in MVP"}}
+{"timestamp": "2025-12-14T10:29:21.698630", "query": "What is the inventory risk for store 1?", "tool": "unknown", "result": {"error": "Tool not supported in MVP"}}
+{"timestamp": "2025-12-14T10:30:57.633148", "query": "What is the inventory risk for store 1?", "tool": "unknown", "result": {"error": "Tool not supported in MVP"}}
+{"timestamp": "2025-12-14T10:36:52.907023", "query": "What is the inventory risk for store 1?", "tool": "inventory_agent", "result": {"store_id": 1, "predicted_weekly_sales": 1499849.15, "risk_level": "MEDIUM"}}
+{"timestamp": "2025-12-14T10:38:00.268799", "query": "What is the inventory risk for store 1?", "tool": "inventory_agent", "result": {"store_id": 1, "predicted_weekly_sales": 1499849.15, "risk_level": "MEDIUM"}}
+{"timestamp": "2025-12-14T10:44:20.086983", "query": "What is the sales risk for store 1?", "tool": "inventory_agent", "result": {"store_id": 1, "predicted_weekly_sales": 1499849.15, "risk_level": "MEDIUM"}}
+{"query": "What is the inventory risk for store 1?", "tool": "unknown", "payload": {"store_id": 1, "weeks": 3}, "timestamp": "2025-12-14T10:56:31.387681"}
+{"query": "What is the inventory risk for store 1?", "tool": "unknown", "payload": {"store_id": 1, "weeks": 3}, "timestamp": "2025-12-14T10:57:34.791074"}
+{"query": "What is the inventory risk for store 1?", "tool": "unknown", "payload": {"store_id": 1, "weeks": 3}, "timestamp": "2025-12-14T10:58:34.537274"}
+{"query": "What is the inventory risk for store 1?", "tool": "unknown", "payload": {"store_id": 1, "weeks": 3}, "timestamp": "2025-12-14T11:00:01.920444"}
+{"query": "What is the inventory_agent risk for store 1?", "tool": "unknown", "payload": {"store_id": 1, "weeks": 3}, "timestamp": "2025-12-14T11:00:40.814298"}
+{"query": "What is the inventory  risk for store 1?", "tool": "unknown", "payload": {"store_id": 1, "weeks": 3}, "timestamp": "2025-12-14T11:33:01.550134"}
+{"query": "What is the inventory  risk for store 1?", "tool": "unknown", "payload": {"store_id": 1, "weeks": 3}, "timestamp": "2025-12-14T11:33:50.291582"}
+{"query": "What is the inventory  risk for store 1?", "tool": "unknown", "payload": {"store_id": 1, "weeks": 3}, "timestamp": "2025-12-14T11:36:00.506724"}
+{"timestamp": "2025-12-14T12:04:33.175971", "query": "What is the inventory risk for store 1?", "tool": "unknown", "result": "rejected"}
+{"timestamp": "2025-12-14T12:06:41.738284", "query": "What is the inventory risk for store 1?", "tool": "inventory_agent", "result": {"store_id": 1, "predicted_weekly_sales": 1499849.15, "risk_level": "MEDIUM"}}
+{"timestamp": "2025-12-14T12:07:02.355840", "query": "What is the inventory risk for store 1?", "tool": "inventory_agent", "result": {"store_id": 42, "predicted_weekly_sales": 529976.6, "risk_level": "MEDIUM"}}
+{"timestamp": "2025-12-14T12:10:00.649125", "query": "How was the weather last year?", "tool": "unknown", "result": "rejected"}
+{"timestamp": "2025-12-14T12:28:25.897842", "query": "What is the inventory risk for store 1?", "tool": "inventory_agent", "payload": {"store_id": 1, "weeks": 3}, "result": {"store_id": 1, "predicted_weekly_sales": 1499849.15, "risk_level": "MEDIUM"}}
+{"timestamp": "2025-12-14T12:30:02.030061", "query": "What is the inventory risk for store 1?", "tool": "inventory_agent", "payload": {"store_id": 1, "weeks": 1}, "result": {"store_id": 1, "predicted_weekly_sales": 1499849.15, "risk_level": "MEDIUM"}}
+{"timestamp": "2025-12-14T12:31:32.669857", "query": "What is the inventory risk for store 1?", "tool": "inventory_agent", "payload": {"store_id": 1, "weeks": 0}, "result": {"error": "Insufficient data for store"}}
